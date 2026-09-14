@@ -1,5 +1,78 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+*{
+   margin: 0;
+   padding: 0
+   ;
+}
+
+body { 
+  background-color: #4446ce;
+  color: #eaeaff;
+  font-family: monopace;
+  font-size: x-large;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.grupoComandos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cartaoComandos {
+  border: 3px solid #00ff;
+  border-radius: 20px;
+  width: 85vw;
+  height: 20vh;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+   .grupoComandos {
+     flex-direction: row;
+     flex-wrap: wrap;
+   }
+
+     .cartaoComando {
+      border: 3px solid black;
+      border-radius: 20px;
+      flex-direction: column;
+      width: 85vw;
+      
+    }
+}
+     
+    /* Celular */
+@media screen and (max-width: 600px) {
+    .grupoComandos {
+     flex-direction: row;
+     flex-wrap: wrap;
+
+   }
+
+    .cartaoComando {
+      border: 3px solid black;
+      border-radius: 20px;
+      width: 85vw;
+      flex-direction: column;
+}
+}
+
+    /* computador */
+@media screen and (min-width: 1025px) {
+    .grupoComandos {
+     flex-direction: row;
+     flex-wrap: wrap;
+   }
+
+    .cartaoComando {
+      border: 3px solid #ff6600;
+      border-radius: 20px;
+      width: 85vw;
+      flex-direction: column;
+    }
 }
