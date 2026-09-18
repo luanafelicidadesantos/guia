@@ -1,13 +1,13 @@
 *{
    margin: 0;
    padding: 0;
-   
+   box-sizing: border-box;
 }
 
 body { 
   background-color: #4446ce;
   color: #eaeaff;
-  font-family: monopace;
+  font-family: monospace;
   font-size: x-large;
 }
 
@@ -23,43 +23,19 @@ main {
   gap: 15px;
 }
 
-.cartaoComandos {
-  border: 3px solid #00ff;
+.cartaoComando {
+  border: 3px solid #0000ff;
   border-radius: 20px;
   width: 85vw;
   height: 20vh;
+  padding: 10px 15px;
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-   .grupoComandos {
-     flex-direction: row;
-     flex-wrap: wrap;
-   }
-
      .cartaoComando {
       border: 3px solid black;
-      border-radius: 20px;
-      flex-direction: column;
-      width: 85vw;
-      
     }
-}
-     
-    /* Celular */
-@media screen and (max-width: 600px) {
-    .grupoComandos {
-     flex-direction: row;
-     flex-wrap: wrap;
-
-   }
-
-    .cartaoComando {
-      border: 3px solid black;
-      border-radius: 20px;
-      width: 85vw;
-      flex-direction: column;
-}
 }
 
     /* computador */
@@ -72,7 +48,15 @@ main {
     .cartaoComando {
       border: 3px solid #ff6600;
       border-radius: 20px;
-      width: 85vw;
+      width: 21vw;
+      height: 250px;
       flex-direction: column;
+      transition: 200ms;
+    }
+
+    .cartaoComando:hover {
+      border: 5px solid #ffffff;
+      scale: 105%; 
+      
     }
 }
