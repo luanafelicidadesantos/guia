@@ -60,3 +60,13 @@ main {
       
     }
 }
+
+/* CSS vem aqui em baixo*/
+
+.modoClaro {
+  background-color:#6060eb;
+}
+
+.modoEscuro {
+  background-color:#0000ff;
+}
